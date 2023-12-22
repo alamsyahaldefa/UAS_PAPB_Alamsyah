@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg2"
+    android:padding="16dp"
+    tools:context=".User.home_Fragment">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Welcome to OutletFilm"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/topMoviesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Top Movies"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="1dp"/>
+
+    <!-- RecyclerView to display top movies -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topMoviesTextView"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/item_film"/>
+
+</RelativeLayout>

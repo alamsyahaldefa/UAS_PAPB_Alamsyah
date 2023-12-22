@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg2"
+    android:padding="16dp"
+    tools:context=".User.home_Fragment">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Welcome to OutletFilm"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/topMoviesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Top Movies"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="1dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topMoviesTextView"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:layout_marginTop="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <!-- Movie 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/buyTicketButton1"
+                android:layout_width="150dp"
+                android:layout_height="236dp"
+                android:layout_gravity="center"
+                android:src="@drawable/movie1"
+                android:contentDescription="Buy Tickets for Movie 1" />
+
+            <TextView
+                android:id="@+id/movieTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:text="PETUALANGAN SHERINA 2"/>
+
+            <RatingBar
+                android:id="@+id/movieRatingBar1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:stepSize="0.5" />
+        </LinearLayout>
+
+        <!-- Movie 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/buyTicketButton2"
+                android:layout_width="150dp"
+                android:layout_height="236dp"
+                android:layout_gravity="center"
+                android:src="@drawable/movie2"
+                android:contentDescription="Buy Tickets for Movie 2" />
+
+            <TextView
+                android:id="@+id/movieTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="DI AMBANG KEMATIAN"/>
+
+            <RatingBar
+                android:id="@+id/movieRatingBar2"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.5"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:stepSize="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/buyTicketButton3"
+                android:layout_width="150dp"
+                android:layout_height="236dp"
+                android:layout_gravity="center"
+                android:src="@drawable/movie3"
+                android:contentDescription="Buy Tickets for MOVIE 3" />
+
+            <TextView
+                android:id="@+id/movieTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="WAKTU MAGHRIB"/>
+
+            <RatingBar
+                android:id="@+id/movieRatingBar3"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:stepSize="0.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/buyTicketButton4"
+                android:layout_width="150dp"
+                android:layout_height="236dp"
+                android:layout_gravity="center"
+                android:src="@drawable/movie4"
+                android:contentDescription="Buy Tickets for MOVIE 4" />
+
+            <TextView
+                android:id="@+id/movieTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="SLEEP CALL"/>
+
+            <RatingBar
+                android:id="@+id/movieRatingBar4"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:stepSize="0.5"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_columnWeight="1"
+    android:layout_margin="8dp"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <ImageView
+                android:id="@+id/imageFilm"
+                android:layout_width="150dp"
+                android:layout_height="236dp"
+                android:layout_gravity="center"
+                android:background="@drawable/movie3"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="PETUALANGAN SHERINA 2"/>
+
+
+        </LinearLayout>

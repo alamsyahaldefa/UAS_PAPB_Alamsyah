@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewMovie"
+        android:layout_width="150dp"
+        android:layout_height="236dp"
+        android:background="@drawable/movie3"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewMovieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/imageViewMovie"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewMovieDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie Description"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewMovieTitle"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textViewMovieDescription"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewEdit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_editt"
+            android:layout_marginEnd="16dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_delettee"
+            android:clickable="true" />
+
+    </LinearLayout>
+</RelativeLayout>

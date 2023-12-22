@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_user"
+    app:startDestination="@id/home_Fragment">
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="com.example.uas_papb.User.home_Fragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" >
+        <action
+            android:id="@+id/action_home_Fragment_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.uas_papb.User.FavoriteFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.uas_papb.User.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.uas_papb.User.DetailsActivity"
+        android:label="DetailsActivity" >
+        <argument
+            android:name="id_movie"
+            app:argType="string" />
+    </activity>
+</navigation>
